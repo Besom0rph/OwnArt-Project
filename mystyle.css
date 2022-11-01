@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+}
+.ownart {
+  color:#03e9f4;
+  
+
+}
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+.symbol{
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+  margin-top: 10px;
+  
+
+}
+
+
+.nav-title{
+  display: inline-block;
+  padding-left: 20px;
+
+}
+.search_bar{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: gray;
+  height: 50px;
+  padding: 10px;
+}
+.search_box{
+  width: 40%;
+  background-color: #333;
+  color: white;
+  height: 30px;
+
+}
+
+
+.nav {
+  height: 65px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+  border-style: solid;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 1px;
+}
+
+.nav > .nav-header {
+  display: inline;
+  
+}
+
+.nav > .nav-header >  {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+.menu_nft{
+  display: contents;
+  margin-right: 10px;
+  border-style: solid;
+  border-width: 0.5px;
+  background-color: gray;
+}
+.menu_digi{
+  display: contents;
+  margin-right: 10px;
+  border-style: solid;
+  border-width: 0.5px;
+  background-color: gray;
+}
+
+.menu_tool {
+  display: contents;
+  margin-right: 750px;
+  border-style: solid;
+  border-width: 0.5px;
+  background-color: gray;
+  
+}
+.menu_start{
+  display: contents;
+  background-color: green;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+.product-items {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: grey;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: black;
+    text-align: center;
+    
+  }
+  .product-items:hover {
+    transform: scale(1.03); 
+    background: #03e9f4;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  .product-img {
+    width: 100%;
+    height: 17vw;
+    object-fit: cover;
+    
+  }
+
+  .product {
+
+    padding: 10px;
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-content: space-around;
+  }
+
+  .BG { 
+
+    align-items: center;
+    font-family: sans-serif;
+    background-image: url("BG2.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
+  }
+
+  .footer{
+    background-color: #4d4d4d;
+    
+    display: flex;
+    justify-content: center;
+    
+  }
+  .cgr{
+    font-size: 16pt;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    background-color: gray;
+    padding: 5px;
+    
+    
+  }
